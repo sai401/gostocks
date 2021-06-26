@@ -1,0 +1,52 @@
+<div>
+
+<table class="table table-bordered table-hover table-responsive-md">
+  <thead>
+    <tr *ngFor="let
+     of stocksListData">
+      <th scope="col">S.No</th>
+      <th scope="col">Name</th>
+      <th scope="col">CMP Rs</th>
+      <th scope="col">Mar Cap Rs.Cr</th>
+      <th scope="col">Sales Rs.Cr</th>
+      <th scope="col">ROE %</th>
+      <th scope="col">ROCE %</th>
+      <th scope="col">P/E</th>
+      <th scope="col">Debt / Eq</th>
+      <th scope="col">Piotski Scr</th>
+      <th scope="col">CMP / FCF</th>
+      <th scope="col">G Factor</th>
+      <th scope="col">PEG</th>
+      <th scope="col">Altman Z Scr</th>
+      <th scope="col">Graham Price Rs.</th>
+      <th scope="col">Ind PE</th>
+      <th scope="col">CMP / BV</th>
+      <th scope="col">GOPP %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stockobj of stocksListData">
+      <th scope="row">{{stockobj["S.No."]}}</th>
+
+      <td>{{stockobj["Name"]}}</td>
+      <td>{{stockobj["CMP Rs."]}}</td>
+      <td>{{stockobj["Mar Cap Rs.Cr."]}}</td>
+      <td>{{stockobj["Sales Rs.Cr."]}}</td>
+      <td>{{stockobj["ROE %"]}}</td>
+      <td>{{stockobj["ROCE %"]}}</td>
+      <td>{{stockobj["P/E"]}}</td>
+      <td>{{stockobj["Debt / Eq"]}}</td>
+      <td>{{stockobj["Piotski Scr"]}}</td>
+      <td>{{stockobj["CMP / FCF"]}}</td>
+      <td>{{stockobj["G Factor"]}}</td>
+      <td>{{stockobj["PEG"]}}</td>
+      <td>{{stockobj["Altman Z Scr"]}}</td>
+      <td>{{stockobj["Graham Price Rs."]}}</td>
+      <td>{{stockobj["Ind PE"]}}</td>
+      <td>{{stockobj["CMP / BV"]}}</td>
+      <td>{{stockobj["GOPP %"]}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
